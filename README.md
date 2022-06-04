@@ -4,7 +4,7 @@
 
 This project is built with the following frameworks/libraries:
 #### Assembly Language Emulator
-[Asm](https://emu8086-microprocessor-emulator.en.softonic.com/#:~:text=EMU8086%20%2D%20MICROPROCESSOR%20EMULATOR%20is%20a,the%201980s%20and%20early%201990s.)
+[Asm 8086 Emulator](https://emu8086-microprocessor-emulator.en.softonic.com/#:~:text=EMU8086%20%2D%20MICROPROCESSOR%20EMULATOR%20is%20a,the%201980s%20and%20early%201990s.)
 
 
 ## Project Description
