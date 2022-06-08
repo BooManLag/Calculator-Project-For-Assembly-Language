@@ -20,6 +20,5 @@ The calculator can produce what a simple calculator can provide, upto 5 integers
 This project would not have been possible without the help of the following contributors:
 
 1. Joshua Bumanlag
-2. Patricia Trajano 
-3. Isabella Malonzo 
-4. Micah Fabon
+2. Isabella Malonzo 
+3. Micah Fabon
