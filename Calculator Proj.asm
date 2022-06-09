@@ -32,8 +32,8 @@ start:  mov ah,9
 Addition:   mov ah,09h  ;then let us handle the case of addition operation
             mov dx, offset msg2  ;first we will display this message enter first no also using int 21h
             int 21h
-            mov cx,0 ;we will call InputNo to handle our input as we will take each number seprately
-            call InputNo  ;first we will move to cx 0 because we will increment on it later in InputNo
+            mov cx,0  ;first we will move to cx 0 because we will increment on it later in InputNo
+            call InputNo  ;we will call InputNo to handle our input as we will take each number seprately
             push dx
             mov ah,9
             mov dx, offset msg3
