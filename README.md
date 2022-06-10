@@ -14,6 +14,8 @@ The calculator can produce what a simple calculator can provide, upto 5 integers
 2. Subraction
 3. Multiplication
 4. Division
+5. Modulo
+6. Exponent
 
 ## Contributors
 
