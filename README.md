@@ -22,3 +22,4 @@ This project would not have been possible without the help of the following cont
 1. Joshua Bumanlag
 2. Isabella Malonzo 
 3. Micah Fabon
+4. Patricia Trajano
