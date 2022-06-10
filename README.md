@@ -25,3 +25,7 @@ This project would not have been possible without the help of the following cont
 2. Isabella Malonzo 
 3. Micah Fabon
 4. Patricia Trajano
+
+## Files
+
+There are two files, check the Final with UI for better understanding of the code and functionality
