@@ -2,14 +2,20 @@ org 100h
 
 jmp start       ; jump over data declaration
 
-msg:    db      "1-Add",0dh,0ah,"2-Multiply",0dh,0ah,"3-Subtract",0dh,0ah,"4-Divide", 0Dh,0Ah, '$'
+header:  db      20h, 20h, 20h,20h, 20h,"BLOCK 2-3", 0dh, 0ah, 20h, 20h, 20h,20h,"Calculator", '$'
+divider: db      0dh, 0ah,"==================", '$'
+msg:     db      0dh, 0ah,"1-Add",0dh,0ah,"2-Multiply",0dh,0ah,"3-Subtract",0dh,0ah,"4-Divide", 0Dh,0Ah, '$'
 msg2:    db      0dh,0ah,"Enter First No : $"
 msg3:    db      0dh,0ah,"Enter Second No : $"
 msg4:    db      0dh,0ah,"Choice Error $" 
 msg5:    db      0dh,0ah,"Result : $" 
-msg6:    db      0dh,0ah ,'thank you for using the calculator! press any key... ', 0Dh,0Ah, '$'
+msg6:    db      0dh,0dh,0ah,0ah,'Thank you for using the calculator! press any key... ', 0Dh,0Ah, '$'
 
 start:  mov ah,9
+        mov dx, offset header ;for header
+        int 21h
+        mov dx, offset divider ;for divider
+        int 21h
         mov dx, offset msg ;first we will display hte first message from which he can choose the operation using int 21h
         int 21h
         mov ah,0                       
@@ -32,8 +38,8 @@ start:  mov ah,9
 Addition:   mov ah,09h  ;then let us handle the case of addition operation
             mov dx, offset msg2  ;first we will display this message enter first no also using int 21h
             int 21h
-            mov cx,0 ;we will call InputNo to handle our input as we will take each number seprately
-            call InputNo  ;first we will move to cx 0 because we will increment on it later in InputNo
+            mov cx,0  ;first we will move to cx 0 because we will increment on it later in InputNo
+            call InputNo  ;we will call InputNo to handle our input as we will take each number seprately
             push dx
             mov ah,9
             mov dx, offset msg3
