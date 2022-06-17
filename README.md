@@ -8,7 +8,7 @@ This project is built with the following frameworks/libraries:
 
 
 ## Project Description
-The calculator can produce what a simple calculator can provide, upto 5 integers. Below here are the following features:
+The calculator can produce what a simple calculator can provide, upto 5+ integers. Below here are the following features:
 
 1. Addition
 2. Subraction
